@@ -10,7 +10,7 @@ class WeatherItem extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    WeatherModel weatherModel = BlocProvider.of<GetCurrentWeatherCubit>(context).weatherModel!;
+    WeatherModel weatherModel = BlocProvider.of<GetCurrentWeatherCubit>(context).weather!;
     return Container(
       height: 370,
       width: 340,

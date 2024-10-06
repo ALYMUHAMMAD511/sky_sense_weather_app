@@ -10,7 +10,7 @@ class WeatherSearchItem extends StatelessWidget {
   const WeatherSearchItem({super.key});
   @override
   Widget build(BuildContext context) {
-    WeatherModel weatherModel = BlocProvider.of<GetCurrentWeatherCubit>(context).weatherModel!;
+    WeatherModel weatherModel = BlocProvider.of<GetCurrentWeatherCubit>(context).weather!;
     return  Padding(
       padding: const EdgeInsets.all(22.0),
       child: Row(

@@ -16,7 +16,7 @@ class SearchTextField extends StatelessWidget {
               onSubmitted: (value) async
               {
                 var getCurrentWeatherCubit = BlocProvider.of<GetCurrentWeatherCubit>(context);
-                await getCurrentWeatherCubit.getCurrentWeather(cityName: value);
+                await getCurrentWeatherCubit.getWeather(cityName: value);
                 // ignore: use_build_context_synchronously
                 Navigator.pop(context);
               },

@@ -7,6 +7,7 @@ PreferredSizeWidget customAppBar({
 }) =>
     AppBar(
       elevation: 0,
+      forceMaterialTransparency: true,
       leadingWidth: 70,
       iconTheme: const IconThemeData(
         size: 30,
